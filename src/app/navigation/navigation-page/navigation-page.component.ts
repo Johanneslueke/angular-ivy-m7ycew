@@ -6,6 +6,7 @@ import { MediaMatcher } from '@angular/cdk/layout';
   styleUrls: ['./navigation-page.component.css'],
 })
 export class NavigationPageComponent implements OnInit {
+  mobileQuery: MediaQueryList;
   links = [
     {
       path: 'List',
