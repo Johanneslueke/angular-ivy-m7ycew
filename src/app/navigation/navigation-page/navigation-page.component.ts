@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MediaMatcher } from '@angular/cdk/layout';
 @Component({
   selector: 'app-navigation-page',
   templateUrl: './navigation-page.component.html',
@@ -14,7 +14,7 @@ export class NavigationPageComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(private media: MediaMatcher) {}
 
   ngOnInit() {}
 }
