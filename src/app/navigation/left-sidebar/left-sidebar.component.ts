@@ -1,5 +1,5 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-left-sidebar',
@@ -7,6 +7,14 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
   styleUrls: ['./left-sidebar.component.css'],
 })
 export class LeftSidebarComponent implements OnInit {
+  @Input() navLinks: [
+    {
+      path: string;
+      label: string;
+      icon: string;
+    }
+  ];
+
   private _mobileQueryListener: () => void;
   mobileQuery: MediaQueryList;
 
