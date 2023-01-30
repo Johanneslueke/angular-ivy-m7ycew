@@ -1,6 +1,6 @@
 {
   "installDependencies": true,
-  "startCommand": " turbo start",
+  "startCommand": "ng serve",
   "env": {
     "ENABLE_CJS_IMPORTS": true,
     "NODE_ENV": "development"
