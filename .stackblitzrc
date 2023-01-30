@@ -2,6 +2,7 @@
   "installDependencies": true,
   "startCommand": "ng g schematics-scss-migrate:scss-migrate; turbo start",
   "env": {
-    "ENABLE_CJS_IMPORTS": true
+    "ENABLE_CJS_IMPORTS": true,
+    "NODE_ENV": "development"
   }
 }
