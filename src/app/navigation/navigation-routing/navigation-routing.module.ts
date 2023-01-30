@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Route, RouterModule } from '@angular/router';
+import { NavigationPageComponent } from '../navigation-page/navigation-page.component';
 
-const ROUTES = [{}];
+const ROUTES: Array<Route> = [
+  {
+    path: 'list',
+    component: NavigationPageComponent,
+  },
+];
 
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(ROUTES)],
