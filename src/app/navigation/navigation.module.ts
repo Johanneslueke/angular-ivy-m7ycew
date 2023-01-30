@@ -9,8 +9,15 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { LeftSidebarComponent } from './left-sidebar/left-sidebar.component';
 import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 @NgModule({
-  imports: [CommonModule, RouterModule, NavigationRoutingModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    NavigationRoutingModule,
+    MatSidenavModule,
+  ],
   exports: [NavigationPageComponent],
   declarations: [
     NavigationPageComponent,
