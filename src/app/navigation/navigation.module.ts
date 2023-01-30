@@ -10,13 +10,25 @@ import { LeftSidebarComponent } from './left-sidebar/left-sidebar.component';
 import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
     CommonModule,
+    BrowserAnimationsModule,
     RouterModule,
     NavigationRoutingModule,
     MatSidenavModule,
+    MatMenuModule,
+    MatListModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatIconModule,
   ],
   exports: [NavigationPageComponent],
   declarations: [

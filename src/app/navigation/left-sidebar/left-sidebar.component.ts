@@ -7,13 +7,11 @@ import { ChangeDetectorRef, Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./left-sidebar.component.css'],
 })
 export class LeftSidebarComponent implements OnInit {
-  @Input() navLinks: [
-    {
-      path: string;
-      label: string;
-      icon: string;
-    }
-  ];
+  @Input() navLinks: Array<{
+    path: string;
+    label: string;
+    icon: string;
+  }>;
 
   private _mobileQueryListener: () => void;
   mobileQuery: MediaQueryList;
