@@ -17,7 +17,7 @@ export class LeftSidebarComponent implements OnInit {
   }
 
   ngOnDestroy(): void {
-    this.mobileQuery.removeAllListeners();
+    this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
   ngOnInit() {}
