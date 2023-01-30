@@ -9,6 +9,7 @@ import { InMemoryDBService } from './services/in-memory-db.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { NavigationPageComponent } from './navigation/navigation-page/navigation-page.component';
+import { NavigationModule } from './navigation/navigation.module';
 
 @NgModule({
   imports: [
@@ -20,6 +21,7 @@ import { NavigationPageComponent } from './navigation/navigation-page/navigation
         component: NavigationPageComponent,
       },
     ]),
+    NavigationModule,
     HttpClientModule,
     InMemoryWebApiModule.forRoot(InMemoryDBService),
   ],
