@@ -4,10 +4,10 @@ import { Route, RouterModule } from '@angular/router';
 import { NavigationPageComponent } from '../navigation-page/navigation-page.component';
 
 const ROUTES: Array<Route> = [
-  {
-    path: 'list',
-    component: NavigationPageComponent,
-  },
+  // {
+  //   path: 'list',
+  //   component: NavigationPageComponent,
+  // },
 ];
 
 @NgModule({
